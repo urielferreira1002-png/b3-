@@ -301,7 +301,7 @@ footer {
     justify-content: center;
     text-align: center;
     /* Mude o nome abaixo para o nome exato do seu arquivo de imagem */
-    background: url('/b3gang.jpeg') no-repeat center center/cover; 
+    background: url('b3gang.jpeg') no-repeat center center/cover; 
     position: relative;
 }/* RESET DE TESTE */
 * {
