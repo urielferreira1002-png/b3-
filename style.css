@@ -328,4 +328,36 @@ body {
     padding: 20px;
     margin: 20px;
     background: #111;
+}.hero {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    position: relative;
+    /* O segredo está aqui: o nome deve ser igual ao do arquivo na sua lista */
+    background: url('b3gang.jpeg') no-repeat center center/cover;
+    overflow: hidden;
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.6); /* Escurece a foto para o texto brilhar */
+    z-index: 1;
+}
+
+.hero-content {
+    position: relative;
+    z-index: 2;
+}
+
+h1 {
+    font-family: 'Orbitron', sans-serif;
+    font-size: 3.5rem;
+    color: #00ffff;
+    text-shadow: 0 0 20px #00ffff;
 }
