@@ -1,1 +1,331 @@
+/* Configurações Gerais */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
 
+body {
+    background-color: #050505; /* Preto fosco */
+    color: #ffffff;
+    font-family: 'Roboto', sans-serif;
+    overflow-x: hidden;
+}
+
+h1, .logo {
+    font-family: 'Orbitron', sans-serif;
+    letter-spacing: 2px;
+}
+
+/* Header */
+header {
+    padding: 20px 5%;
+    background: rgba(0, 0, 0, 0.9);
+    border-bottom: 2px solid #00ffff; /* Linha Ciano */
+    position: fixed;
+    width: 100%;
+    z-index: 1000;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    font-size: 1.8rem;
+    color: #00ffff;
+    text-shadow: 0 0 10px #00ffff;
+}
+
+.logo span {
+    color: #fff;
+    font-size: 1rem;
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+}
+
+nav ul li {
+    margin-left: 25px;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+nav ul li a:hover {
+    color: #00ffff;
+}
+
+/* Seção Hero */
+.hero {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    background: url('https://images.unsplash.com/photo-1542332213-31f87348057f?q=80&w=2070') no-repeat center center/cover; /* Placeholder de BH */
+    position: relative;
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(to bottom, rgba(0,0,0,0.7), #050505);
+}
+
+.hero-content {
+    position: relative;
+    z-index: 1;
+}
+
+.hero-content h1 {
+    font-size: 4rem;
+    margin-bottom: 10px;
+    color: #fff;
+    text-shadow: 0 0 20px #00ffff;
+}
+
+.hero-content p {
+    font-size: 1.5rem;
+    margin-bottom: 30px;
+    color: #00ffff;
+    font-style: italic;
+}
+
+/* Botão Principal */
+.btn-main {
+    padding: 15px 40px;
+    background: transparent;
+    border: 2px solid #00ffff;
+    color: #00ffff;
+    text-decoration: none;
+    font-weight: bold;
+    font-family: 'Orbitron', sans-serif;
+    transition: 0.4s;
+    box-shadow: 0 0 10px rgba(0, 255, 255, 0.3);
+}
+
+.btn-main:hover {
+    background: #00ffff;
+    color: #000;
+    box-shadow: 0 0 30px #00ffff;
+}/* Estilos Gerais de Seção */
+.content-section {
+    padding: 100px 10%;
+    background: #050505;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.section-title {
+    font-family: 'Orbitron', sans-serif;
+    font-size: 2.5rem;
+    color: #00ffff;
+    text-align: center;
+    margin-bottom: 50px;
+    text-transform: uppercase;
+    text-shadow: 0 0 10px rgba(0, 255, 255, 0.5);
+}
+
+/* Estilo da História */
+.history-box {
+    background: rgba(255, 255, 255, 0.05);
+    padding: 40px;
+    border-left: 5px solid #00ffff;
+    line-height: 1.8;
+    font-size: 1.2rem;
+    color: #ccc;
+}
+
+.history-box strong {
+    color: #00ffff;
+}
+
+/* Grid de Metas */
+.metas-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 30px;
+}
+
+.meta-card {
+    background: #111;
+    padding: 30px;
+    border: 1px solid #333;
+    transition: 0.3s;
+    position: relative;
+    overflow: hidden;
+}
+
+.meta-card:hover {
+    border-color: #00ffff;
+    transform: translateY(-10px);
+    box-shadow: 0 10px 20px rgba(0, 255, 255, 0.1);
+}
+
+.meta-number {
+    font-family: 'Orbitron', sans-serif;
+    font-size: 3rem;
+    color: rgba(0, 255, 255, 0.1);
+    position: absolute;
+    top: 10px;
+    right: 20px;
+    font-weight: bold;
+}
+
+.meta-card h3 {
+    font-family: 'Orbitron', sans-serif;
+    color: #00ffff;
+    margin-bottom: 15px;
+}
+
+.meta-card p {
+    color: #aaa;
+    line-height: 1.6;
+}/* Estilo do Formulário */
+.form-container {
+    max-width: 600px;
+    margin: 0 auto;
+    background: #0a0a0a;
+    padding: 40px;
+    border: 1px solid #1a1a1a;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 1);
+}
+
+.input-group {
+    margin-bottom: 25px;
+}
+
+.input-group label {
+    display: block;
+    color: #00ffff;
+    font-family: 'Orbitron', sans-serif;
+    font-size: 0.9rem;
+    margin-bottom: 10px;
+}
+
+.input-group input, 
+.input-group select, 
+.input-group textarea {
+    width: 100%;
+    padding: 12px;
+    background: #111;
+    border: 1px solid #333;
+    color: #fff;
+    outline: none;
+    transition: 0.3s;
+}
+
+.input-group input:focus, 
+.input-group select:focus, 
+.input-group textarea:focus {
+    border-color: #00ffff;
+    box-shadow: 0 0 10px rgba(0, 255, 255, 0.2);
+}
+
+/* Checkbox Estilizado */
+.checkbox {
+    display: flex;
+    align-items: flex-start;
+    gap: 10px;
+}
+
+.checkbox input {
+    width: auto;
+    margin-top: 5px;
+}
+
+.checkbox label {
+    font-family: 'Roboto', sans-serif;
+    color: #aaa;
+    font-style: italic;
+}
+
+/* Botão de Envio */
+.btn-submit {
+    width: 100%;
+    padding: 15px;
+    background: #00ffff;
+    border: none;
+    color: #000;
+    font-family: 'Orbitron', sans-serif;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.4s;
+}
+
+.btn-submit:hover {
+    background: #00cccc;
+    box-shadow: 0 0 25px #00ffff;
+    letter-spacing: 2px;
+}
+
+/* Rodapé */
+footer {
+    padding: 50px 10%;
+    background: #000;
+    text-align: center;
+    border-top: 1px solid #1a1a1a;
+}
+
+.footer-content p {
+    color: #555;
+    font-size: 0.8rem;
+    margin-bottom: 10px;
+}
+
+.socials span {
+    color: #00ffff;
+    margin: 0 10px;
+    font-family: 'Orbitron', sans-serif;
+    font-size: 0.7rem;
+}/* No seu style.css */
+.hero {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    /* Mude o nome abaixo para o nome exato do seu arquivo de imagem */
+    background: url('/b3gang.jpeg') no-repeat center center/cover; 
+    position: relative;
+}/* RESET DE TESTE */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #050505 !important; /* Isso vai forçar o fundo a ficar preto */
+    color: #ffffff;
+    font-family: 'Arial', sans-serif;
+}
+
+.section-title {
+    color: #00ffff !important; /* Força o Ciano */
+    text-shadow: 0 0 10px #00ffff;
+    text-align: center;
+    padding: 20px;
+}
+
+.history-box {
+    border: 2px solid #00ffff;
+    padding: 20px;
+    margin: 20px;
+    background: #111;
+}
