@@ -360,4 +360,51 @@ h1 {
     font-size: 3.5rem;
     color: #00ffff;
     text-shadow: 0 0 20px #00ffff;
+}/* --- AJUSTES PARA CELULAR (MOBILE) --- */
+@media (max-width: 768px) {
+    /* 1. Ajusta o Menu para não embolar */
+    header nav {
+        flex-direction: column; /* Logo em cima, botões embaixo */
+        padding: 15px !important;
+    }
+
+    header ul {
+        flex-wrap: wrap; /* Faz os botões pularem linha se não couberem */
+        justify-content: center;
+        gap: 10px !important;
+        margin-top: 10px;
+    }
+
+    header ul li a {
+        font-size: 0.7rem !important; /* Diminui um pouco a letra */
+        padding: 5px 10px !important;
+    }
+
+    /* 2. Ajusta os Títulos das seções */
+    h1 {
+        font-size: 1.8rem !important;
+    }
+
+    h2 {
+        font-size: 1.5rem !important;
+    }
+
+    /* 3. Ajusta as Grades (Metas e Membros) */
+    .membros-grid, 
+    #metas div[style*="display: grid"] {
+        grid-template-columns: 1fr !important; /* Uma coluna só no celular */
+        padding: 10px;
+    }
+
+    /* 4. Ajusta o formulário de recrutamento */
+    #recrutamento div[style*="max-width: 700px"] {
+        padding: 20px !important;
+        margin: 0 10px;
+    }
+
+    /* 5. Ajusta a Hero (Página Inicial) */
+    .hero-content p {
+        font-size: 0.9rem !important;
+        letter-spacing: 1px !important;
+    }
 }
