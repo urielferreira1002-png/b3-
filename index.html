@@ -7,175 +7,115 @@
     <link rel="stylesheet" href="style.css">
     <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&family=Roboto:wght@300;400&display=swap" rel="stylesheet">
 </head>
-<body>
+<body style="background-color: #050505; margin: 0; padding: 0; color: white;">
 
-    <header>
-        <nav>
-         <header>
-    <nav class="container">
-        <div class="logo">B3<span>BH</span></div>
-        <ul>
-            <li><a href="index.html#home">Home</a></li>
-            <li><a href="index.html#historia">História</a></li>
-            <li><a href="index.html#metas">Metas</a></li>
-            <li><a href="membros.html" class="btn-nav">Membros</a></li> <li><a href="#recrutamento" class="btn-nav">Recrutar</a></li>
-            <li><a href="#recrutamento" class="btn-nav">Recrutar</a></li>
-        </ul>
-    </nav>
-</header>
+    <header style="position: sticky; top: 0; z-index: 1000; background: rgba(0,0,0,0.95); border-bottom: 1px solid #00ffff; padding: 10px 0;">
+        <nav class="container" style="display: flex; justify-content: space-between; align-items: center; padding: 0 5%; max-width: 1200px; margin: 0 auto;">
+            <div class="logo" style="font-family: 'Orbitron'; font-size: 1.8rem; font-weight: bold; letter-spacing: 2px;">
+                B3<span style="color: #00ffff;">BH</span>
+            </div>
+            <ul style="list-style: none; display: flex; gap: 20px; margin: 0; padding: 0; align-items: center;">
+                <li><a href="#home" style="color: white; text-decoration: none; font-family: 'Orbitron'; font-size: 0.8rem;">Home</a></li>
+                <li><a href="#historia" style="color: white; text-decoration: none; font-family: 'Orbitron'; font-size: 0.8rem;">História</a></li>
+                <li><a href="#metas" style="color: white; text-decoration: none; font-family: 'Orbitron'; font-size: 0.8rem;">Metas</a></li>
+                <li><a href="membros.html" style="color: #00ffff; text-decoration: none; font-family: 'Orbitron'; font-size: 0.8rem; border: 1px solid #00ffff; padding: 5px 15px; border-radius: 4px;">Membros</a></li>
+                <li><a href="#recrutamento" style="background: #00ffff; color: black; text-decoration: none; font-family: 'Orbitron'; font-size: 0.8rem; padding: 7px 15px; font-weight: bold; border-radius: 4px;">Recrutar</a></li>
+            </ul>
+        </nav>
+    </header>
 
-    <section id="home" class="hero">
-        <div class="overlay"></div>
-        <div class="hero-content">
-            <h1>B3: A MAIOR DE BH</h1>
-            <p>"No centro de BH, ninguém anda sozinho."</p>
-            <a href="#recrutamento" class="btn-main">FECHAR COM O BONDE</a>
+    <section id="home" class="hero" style="height: 100vh; display: flex; align-items: center; justify-content: center; text-align: center; position: relative; background: url('b3gang.jpeg') no-repeat center center/cover;">
+        <div class="overlay" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; background: rgba(0, 0, 0, 0.7); z-index: 1;"></div>
+        <div class="hero-content" style="position: relative; z-index: 2; padding: 0 20px;">
+            <h1 style="font-family: 'Orbitron', sans-serif; font-size: clamp(2rem, 8vw, 4rem); color: #00ffff; text-shadow: 0 0 20px #00ffff; margin-bottom: 10px;">B3: A MAIOR DE BH</h1>
+            <p style="font-family: 'Roboto'; color: white; letter-spacing: 3px; font-size: 1.2rem; text-transform: uppercase;">"No centro de BH, ninguém anda sozinho."</p>
+            <a href="#recrutamento" style="display: inline-block; margin-top: 30px; padding: 18px 40px; border: 2px solid #00ffff; color: #00ffff; text-decoration: none; font-family: 'Orbitron'; font-weight: bold; box-shadow: 0 0 15px rgba(0, 255, 255, 0.3); transition: 0.3s;">FECHAR COM O BONDE</a>
         </div>
     </section>
+
+    <section id="historia" style="background-color: #050505; padding: 100px 5%; font-family: 'Roboto', sans-serif;">
+        <div style="max-width: 1000px; margin: 0 auto;">
+            <h2 style="font-family: 'Orbitron'; font-size: 2.5rem; color: #00ffff; text-align: center; margin-bottom: 50px; text-shadow: 0 0 15px #00ffff;">A HISTÓRIA</h2>
+            <div style="background: rgba(255, 255, 255, 0.03); padding: 40px; border-left: 5px solid #00ffff; line-height: 1.8; color: #ccc; font-size: 1.1rem;">
+                <p>A história da <strong style="color: #00ffff;">B3</strong> não está gravada em livros, mas sim no asfalto de Belo Horizonte. O que começou nos pátios da escola se tornou a ordem necessária em meio ao caos da capital. Nossa estrutura é sólida, baseada em uma lealdade que não se quebra.</p>
+                <p>No comando, a inteligência de <strong style="color: #00ffff;">Uriel</strong>, a logística de <strong style="color: #00ffff;">Richard</strong>, o radar de <strong style="color: #00ffff;">Victor</strong> e o pilar de <strong style="color: #00ffff;">Luiz</strong> formam o Quarteto de Ferro. Eles são as mentes que guiam o bonde através das sombras do Centro.</p>
+                <p>Mas a B3 é feita de cada braço que se levanta. Sob a supervisão direta do Conselho formado por <strong style="color: #00ffff;">João</strong>, <strong style="color: #00ffff;">Bernardo</strong> e <strong style="color: #00ffff;">Davi</strong>, a nossa força se torna imbatível. Na linha de frente, o respeito é garantido pela presença de <strong style="color: #00ffff;">Rendry</strong>, <strong style="color: #00ffff;">Artur</strong>, <strong style="color: #00ffff;">Anderson</strong>, <strong style="color: #00ffff;">Caleb</strong> e <strong style="color: #00ffff;">Rafael</strong>.</p>
+                <p style="color: #00ffff; font-family: 'Orbitron'; text-align: center; margin-top: 40px; font-weight: bold; font-size: 1.2rem; border-top: 1px solid rgba(0,255,255,0.2); padding-top: 20px;">QUATRO MENTES. UM SÓ BONDE. A B3 É A LEI.</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="metas" style="background-color: #0a0a0a; padding: 100px 5%; font-family: 'Orbitron', sans-serif;">
+        <div style="max-width: 1200px; margin: 0 auto;">
+            <h2 style="color: #00ffff; text-align: center; font-size: 2.5rem; margin-bottom: 60px; text-shadow: 0 0 15px #00ffff;">METAS DA B3</h2>
+            <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 30px;">
+                <div style="border: 1px solid #00ffff; padding: 30px; background: #111; position: relative;">
+                    <span style="position: absolute; right: 20px; top: 10px; font-size: 2.5rem; color: rgba(0, 255, 255, 0.1);">01</span>
+                    <h3 style="color: #00ffff;">RECONHECIMENTO</h3>
+                    <p style="color: #888; font-family: 'Roboto'; font-size: 0.9rem;">Dominar a comunicação visual do hipercentro através de presença física e digital.</p>
+                </div>
+                <div style="border: 1px solid #00ffff; padding: 30px; background: #111; position: relative;">
+                    <span style="position: absolute; right: 20px; top: 10px; font-size: 2.5rem; color: rgba(0, 255, 255, 0.1);">02</span>
+                    <h3 style="color: #00ffff;">ALIANÇA</h3>
+                    <p style="color: #888; font-family: 'Roboto'; font-size: 0.9rem;">Unificar os membros em uma rede de proteção mútua absoluta. Ninguém fica para trás.</p>
+                </div>
+                <div style="border: 1px solid #00ffff; padding: 30px; background: #111; position: relative;">
+                    <span style="position: absolute; right: 20px; top: 10px; font-size: 2.5rem; color: rgba(0, 255, 255, 0.1);">03</span>
+                    <h3 style="color: #00ffff;">EXPANSÃO</h3>
+                    <p style="color: #888; font-family: 'Roboto'; font-size: 0.9rem;">Impactar a cultura jovem de BH. Mostrar que a lealdade vai além do asfalto.</p>
+                </div>
+                <div style="border: 1px solid #00ffff; padding: 30px; background: #111; position: relative;">
+                    <span style="position: absolute; right: 20px; top: 10px; font-size: 2.5rem; color: rgba(0, 255, 255, 0.1);">04</span>
+                    <h3 style="color: #00ffff;">RESPEITO</h3>
+                    <p style="color: #888; font-family: 'Roboto'; font-size: 0.9rem;">Garantir que a postura da B3 seja inquestionável em cada beco e avenida.</p>
+                </div>
+                <div style="border: 1px solid #00ffff; padding: 30px; background: #111; position: relative;">
+                    <span style="position: absolute; right: 20px; top: 10px; font-size: 2.5rem; color: rgba(0, 255, 255, 0.1);">05</span>
+                    <h3 style="color: #00ffff;">LEGADO</h3>
+                    <p style="color: #888; font-family: 'Roboto'; font-size: 0.9rem;">Construir uma história que proteja nosso território e as futuras gerações.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="recrutamento" style="padding: 100px 5%; background: #050505; color: white;">
+        <div style="max-width: 700px; margin: 0 auto; border: 1px solid #333; padding: 40px; background: rgba(255,255,255,0.02);">
+            <h2 style="font-family: 'Orbitron'; color: #00ffff; text-align: center; margin-bottom: 30px;">RECRUTAMENTO</h2>
+            <form style="display: flex; flex-direction: column; gap: 20px;">
+                <div>
+                    <label style="display: block; margin-bottom: 5px; color: #00ffff;">Nome ou Vulgo</label>
+                    <input type="text" placeholder="Como te chamam?" style="width: 100%; padding: 12px; background: #111; border: 1px solid #444; color: white;" required>
+                </div>
+                <div>
+                    <label style="display: block; margin-bottom: 5px; color: #00ffff;">Bairro / Região</label>
+                    <input type="text" placeholder="De onde você vem?" style="width: 100%; padding: 12px; background: #111; border: 1px solid #444; color: white;" required>
+                </div>
+                <div>
+                    <label style="display: block; margin-bottom: 5px; color: #00ffff;">Especialidade</label>
+                    <select style="width: 100%; padding: 12px; background: #111; border: 1px solid #444; color: white;">
+                        <option>Visão de Jogo</option>
+                        <option>Piloto</option>
+                        <option>Comunicação</option>
+                        <option>Linha de Frente</option>
+                    </select>
+                </div>
+                <div>
+                    <label style="display: block; margin-bottom: 5px; color: #00ffff;">O que a lealdade significa para você?</label>
+                    <textarea rows="4" placeholder="Fale a real..." style="width: 100%; padding: 12px; background: #111; border: 1px solid #444; color: white;"></textarea>
+                </div>
+                <div style="display: flex; gap: 10px; align-items: flex-start;">
+                    <input type="checkbox" id="check" required>
+                    <label for="check" style="font-size: 0.8rem; color: #888;">"No centro de BH, ninguém anda sozinho." Estou pronto para fechar com o grupo.</label>
+                </div>
+                <button type="submit" style="background: #00ffff; color: black; padding: 18px; border: none; font-family: 'Orbitron'; font-weight: bold; cursor: pointer; text-transform: uppercase;">ENTRAR PARA A GANG</button>
+            </form>
+        </div>
+    </section>
+
+    <footer style="padding: 50px; text-align: center; border-top: 1px solid #222; color: #555; font-family: 'Roboto';">
+        <p>&copy; 2026 B3 - A Maior de BH. Todos os direitos reservados à lealdade.</p>
+        <div style="color: #00ffff; font-family: 'Orbitron'; font-size: 0.9rem; margin-top: 10px;">#B3BH #NoCentroNinguémAndaSozinho</div>
+    </footer>
 
 </body>
-</html><section id="historia" class="content-section">
-        <div class="container">
-<section id="historia" style="background-color: #050505; padding: 80px 10%; color: #ffffff; font-family: 'Roboto', Arial, sans-serif;">
-    <div style="max-width: 1200px; margin: 0 auto;">
-        
-        <h2 style="font-family: 'Orbitron', sans-serif; font-size: 2.5rem; color: #00ffff; text-align: center; margin-bottom: 40px; text-transform: uppercase; text-shadow: 0 0 15px #00ffff;">
-            A HISTÓRIA
-        </h2>
-
-        <div style="background: rgba(255, 255, 255, 0.05); padding: 40px; border-left: 5px solid #00ffff; box-shadow: 0 10px 30px rgba(0,0,0,0.5);">
-            
-            <p style="font-size: 1.2rem; line-height: 1.8; color: #ccc; margin-bottom: 20px;">
-                A história da <strong style="color: #00ffff;">B3</strong> não está gravada em livros, mas sim no asfalto de Belo Horizonte. O que começou nos pátios da escola se tornou a ordem necessária em meio ao caos da capital. Nossa estrutura é sólida, baseada em uma lealdade que não se quebra.
-            </p>
-            
-            <p style="font-size: 1.2rem; line-height: 1.8; color: #ccc; margin-bottom: 20px;">
-                No comando, a inteligência de <strong style="color: #00ffff;">Uriel</strong>, a logística de <strong style="color: #00ffff;">Richard</strong>, o radar de <strong style="color: #00ffff;">Victor</strong> e o pilar de <strong style="color: #00ffff;">Luiz</strong> formam o Quarteto de Ferro. Eles são as mentes que guiam o bonde através das sombras do Centro.
-            </p>
-
-            <p style="font-size: 1.2rem; line-height: 1.8; color: #ccc; margin-bottom: 20px;">
-                Mas a B3 é feita de cada braço que se levanta. Sob a supervisão direta do Conselho formado por <strong style="color: #00ffff;">João</strong>, <strong style="color: #00ffff;">Bernardo</strong> e <strong style="color: #00ffff;">Davi</strong>, a nossa força se torna imbatível. Na linha de frente, o respeito é garantido pela presença de <strong style="color: #00ffff;">Rendry</strong>, <strong style="color: #00ffff;">Artur</strong>, <strong style="color: #00ffff;">Anderson</strong>, <strong style="color: #00ffff;">Caleb</strong> e <strong style="color: #00ffff;">Rafael</strong>. Cada nome aqui citado é uma peça do sistema que protege o hipercentro.
-            </p>
-
-            <p style="font-size: 1.2rem; line-height: 1.8; color: #ccc; margin-bottom: 20px;">
-                Entre o Viaduto Santa Tereza e a Praça Sete, nós não apenas andamos; nós dominamos. Somos o grito de uma geração que cansou de ser invisível. Se um de nós cair, o bonde inteiro reage. No asfalto de BH, a B3 é a única lei que importa.
-            </p>
-
-            <p style="color: #00ffff; font-family: 'Orbitron', sans-serif; text-align: center; margin-top: 30px; font-weight: bold; border-top: 1px solid rgba(0, 255, 255, 0.3); padding-top: 20px; font-size: 1.1rem; letter-spacing: 2px;">
-                QUATRO MENTES. UM SÓ BONDE. A B3 É A LEI.<br>
-                <span style="font-size: 0.9rem; color: #fff; text-shadow: none;">"NO CENTRO DE BH, NINGUÉM ANDA SOZINHO."</span>
-            </p>
-        </div>
-    </div>
-</section>
-
-    <section id="metas" class="content-section">
-        <div class="container">
-      <section id="metas" style="background-color: #050505; padding: 60px 5%; font-family: 'Orbitron', sans-serif;">
-    <div style="max-width: 1200px; margin: 0 auto;">
-        
-        <h2 style="color: #00ffff; text-align: center; font-size: 2.5rem; letter-spacing: 5px; margin-bottom: 50px; text-shadow: 0 0 15px #00ffff;">
-            METAS DA B3
-        </h2>
-
-        <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 30px;">
-            
-            <div style="background: rgba(20, 20, 20, 0.8); border: 1px solid #00ffff; padding: 30px; position: relative; box-shadow: 0 0 15px rgba(0, 255, 255, 0.1);">
-                <span style="position: absolute; right: 15px; top: 10px; font-size: 3rem; color: rgba(0, 255, 255, 0.1); font-weight: bold;">01</span>
-                <h3 style="color: #00ffff; margin-bottom: 15px; letter-spacing: 2px;">RECONHECIMENTO</h3>
-                <p style="color: #ccc; font-family: 'Roboto', sans-serif; line-height: 1.6; font-size: 0.9rem;">
-                    Dominar a comunicação visual do hipercentro através de presença física e digital. Fazer o nome da B3 ecoar em cada quarteirão.
-                </p>
-            </div>
-
-            <div style="background: rgba(20, 20, 20, 0.8); border: 1px solid #00ffff; padding: 30px; position: relative; box-shadow: 0 0 15px rgba(0, 255, 255, 0.1);">
-                <span style="position: absolute; right: 15px; top: 10px; font-size: 3rem; color: rgba(0, 255, 255, 0.1); font-weight: bold;">02</span>
-                <h3 style="color: #00ffff; margin-bottom: 15px; letter-spacing: 2px;">ALIANÇA</h3>
-                <p style="color: #ccc; font-family: 'Roboto', sans-serif; line-height: 1.6; font-size: 0.9rem;">
-                    Unificar os membros em uma rede de proteção mútua absoluta. Aqui, ninguém fica para trás. A lealdade é nossa primeira lei.
-                </p>
-            </div>
-
-            <div style="background: rgba(20, 20, 20, 0.8); border: 1px solid #00ffff; padding: 30px; position: relative; box-shadow: 0 0 15px rgba(0, 255, 255, 0.1);">
-                <span style="position: absolute; right: 15px; top: 10px; font-size: 3rem; color: rgba(0, 255, 255, 0.1); font-weight: bold;">03</span>
-                <h3 style="color: #00ffff; margin-bottom: 15px; letter-spacing: 2px;">EXPANSÃO</h3>
-                <p style="color: #ccc; font-family: 'Roboto', sans-serif; line-height: 1.6; font-size: 0.9rem;">
-                    Mostrar que a influência da B3 vai além do asfalto, impactando a cultura jovem de BH. O medo não caminha no Centro.
-                </p>
-            </div>
-
-            <div style="background: rgba(20, 20, 20, 0.8); border: 1px solid #00ffff; padding: 30px; position: relative; box-shadow: 0 0 15px rgba(0, 255, 255, 0.1);">
-                <span style="position: absolute; right: 15px; top: 10px; font-size: 3rem; color: rgba(0, 255, 255, 0.1); font-weight: bold;">04</span>
-                <h3 style="color: #00ffff; margin-bottom: 15px; letter-spacing: 2px;">RESPEITO</h3>
-                <p style="color: #ccc; font-family: 'Roboto', sans-serif; line-height: 1.6; font-size: 0.9rem;">
-                    Garantir que a postura da B3 seja inquestionável. Respeito não se pede, se impõe através da união e da inteligência.
-                </p>
-            </div>
-
-            <div style="background: rgba(20, 20, 20, 0.8); border: 1px solid #00ffff; padding: 30px; position: relative; box-shadow: 0 0 15px rgba(0, 255, 255, 0.1);">
-                <span style="position: absolute; right: 15px; top: 10px; font-size: 3rem; color: rgba(0, 255, 255, 0.1); font-weight: bold;">05</span>
-                <h3 style="color: #00ffff; margin-bottom: 15px; letter-spacing: 2px;">LEGADO</h3>
-                <p style="color: #ccc; font-family: 'Roboto', sans-serif; line-height: 1.6; font-size: 0.9rem;">
-                    Construir uma história que proteja nosso território e as futuras gerações. A B3 é eterna enquanto houver lealdade.
-                </p>
-            </div>
-
-        </div>
-
-        <div style="text-align: center; margin-top: 50px; color: #555; font-size: 0.8rem; letter-spacing: 1px;">
-            © 2026 B3 - A MAIOR DE BH. TODOS OS DIREITOS RESERVADOS À LEALDADE.<br>
-            <span style="color: #00ffff;">#B3BH #NoCentroNinguemAndaSozinho</span>
-        </div>
-    </div>
-</section><section id="recrutamento" class="content-section">
-        <div class="container">
-            <h2 class="section-title">RECRUTAMENTO</h2>
-            <div class="form-container">
-
-                    <div class="input-group">
-                        <label>Nome ou Vulgo</label>
-                        <input type="text" placeholder="Como você é conhecido nas ruas?" required>
-                    </div>
-
-                    <div class="input-group">
-                        <label>Bairro / Região de BH</label>
-                        <input type="text" placeholder="De onde você vem?" required>
-                    </div>
-
-                    <div class="input-group">
-                        <label>Qual sua especialidade no bonde?</label>
-                        <select required>
-                            <option value="" disabled selected>Escolha sua função...</option>
-                            <option value="visao">Visão de Jogo</option>
-                            <option value="piloto">Piloto</option>
-                            <option value="comunicacao">Comunicação</option>
-                            <option value="linha-frente">Linha de Frente</option>
-                        </select>
-                    </div>
-
-                    <div class="input-group">
-                        <label>O que a lealdade significa para você?</label>
-                        <textarea rows="4" placeholder="Fale a real..."></textarea>
-                    </div>
-
-                    <div class="input-group checkbox">
-                        <input type="checkbox" id="check-lealdade" required>
-                        <label for="check-lealdade">"No centro de BH, ninguém anda sozinho." Estou pronto para fechar com o grupo até o fim.</label>
-                    </div>
-
-                                <form id="form-b3" action="sucesso.html">
-    <button type="submit" class="btn-submit">ENTRAR PARA A GANG</button>
-</form>
-            </div>
-        </div>
-    </section>
-
-    <footer>
-        <div class="footer-content">
-            <p>&copy; 2026 B3 - A Maior de BH. Todos os direitos reservados à lealdade.</p>
-            <div class="socials">
-                <span>#B3BH</span>
-                <span>#NoCentroNinguémAndaSozinho</span>
-            </div>
-        </div>
-    </footer>
+</html>
